@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+Buongiorno,
+
+A tutti i connazionali, vorrei offrire un servizio a chi ne ha più bisogno per aiutarli nella prenotazione per il rinnovo del Passaporto. 
+
+Il servizio consiste nell'aiutare chi ha più difficoltà nella prenotazione tramite il sito Prenot@mi.
+
+Sono io il primo che si è trovato in difficoltà nel prenotare un'appuntamento per il rinnovo del passaporto, e dopo giorni di ricerca ho deciso di 'sbrogliarmela' da solo creando un piccolo programma che è in grado di prendere una(1) prenotazione nel momento in cui ci sia una 'slot' disponibile.
+
+
+Questo servizio è solo una prova per aiutare la comunità, e ha come unico scopo quello di riuscire ad ottenere una prenotazione presso il sito Prenot@mi.
+Il servizio per chi fosse interessato è completamente gratuito.
+Le tempistiche per riuscire ad ottenere una prenotazione possono variare.
+
+Per ulteriori informazioni vi prego di contattarmi in privato.
+
+Buona giornata

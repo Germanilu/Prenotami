@@ -1,0 +1,10 @@
+@import '../../global.scss';
+.footer-design{
+    height: 8vh;
+    background-color: $french_blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
