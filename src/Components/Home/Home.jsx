@@ -34,7 +34,7 @@ function Home() {
           <div className='information-box-text'>
           <p>Questo sito nasce per risolvere una delle problematiche che tutti noi espatriati dobbiamo affrontare ogni volta che vogliamo rinnovare i nostri documenti.</p>
           <p>Purtroppo è sempre più difficile riuscire a richiedere un'appuntamento sul sito del consolato a causa dei pochi appuntamenti che vengono messi a disposizione ogni giorno.</p>
-          <p>Basterà fornire i dati di accesso al sito Prenot@mi. Email e password. <span>Se vuoi sapere come cambiare la tua password clicca <span>QUI.</span></span> </p>
+          <p>Basterà fornire i dati di accesso al sito Prenot@mi. Email e password. <span>Se vuoi sapere come cambiare la tua password clicca qui: <span> <a href="https://prenotami.esteri.it/Manuale/ManualeCittadino.docx">Manuale del Cittadino</a> </span></span> </p>
           <p>Una volta ricevuti i dati di accesso inizieremo la ricerca e verrai notificato tramite il metodo di contatto da te scelto. Il tempo previsto per l'effettiva prenotazione in media può variare tra i <span> 5-10 giorni lavorativi</span></p>
           <p></p>
           <p>Con questo servizio ci auguriamo di poterti aiutare con la ricerca degli appuntamenti e liberare il tuo prezioso tempo per evitare di ripetere sempre la stessa azione e ottenere sempre la risposta "non ci sono appuntamenti disponibili in questo momento"</p>  
