@@ -1,0 +1,31 @@
+@import '../../global.scss';
+
+.header-design{
+    // border: 1px solid red;
+    height: 6vh;
+    background-color: $french_blue;
+}
+
+.header{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & p{
+        font-weight: 500;
+        color: $black;
+        cursor: pointer;
+        &:hover{
+            color: $celestial_blue;
+        }
+    }
+}
+
+.logo{
+    // border: 1px solid blue;
+    cursor: pointer;
+    width: 12rem;
+}
