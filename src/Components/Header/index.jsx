@@ -2,18 +2,20 @@
 import './index.scss';
 import logo from '../../media/LOGO.jpg'
 import {useNavigate} from 'react-router-dom';
+
 function Header() {
 
-    const navigate = useNavigate();
-    
+const navigate = useNavigate();
+
+
 return(
     <div className="header-design">
         <div className="header">
             <img src={logo} alt="Logo" className='logo'  onClick={() => navigate('/')}/>
             <p onClick={() => navigate('/')}>Inizio</p>
-            <p>Come funziona</p>
+            <a href='#howWork'>Come funziona</a>
             <p onClick={() => navigate('/reserve')}>Richiedi il servizio</p>
-            <p>Prezzo</p>
+            <a href='#price'>Prezzo</a>
         </div>
     </div>
     )

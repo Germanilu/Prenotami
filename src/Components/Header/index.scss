@@ -14,10 +14,11 @@
     justify-content: space-around;
     align-items: center;
 
-    & p{
+    & p, a{
         font-weight: 500;
         color: $black;
         cursor: pointer;
+        text-decoration: none;
         &:hover{
             color: $celestial_blue;
         }
