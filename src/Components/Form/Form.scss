@@ -1,8 +1,70 @@
+@import '../../global.scss';
+
+@import '../../global.scss';
+
 .form-design{
-    height: 130vh;
+    height: 85.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+
+    & h1{
+        margin-top: 5rem;
+    }
+    & span{
+        color: red;
+    }
 }
 
-.google-form{
-    height: 100%;
+
+.form{
+    // border: 1px solid red;
+    margin-top: 2rem;
+    width: 40%;
+    display: grid;
+    justify-content: space-between;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+     & input{
+        border: none;
+        border-bottom: 1px solid $black;
+    }
+
+    & label{
+        font-size: 14px;
+        font-weight: 500;
+        color: $transparent_black;
+    }
+
+}
+
+.field{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+   
+}
+
+.submit-form-button{
+margin-bottom: 2rem;
+width: 20%;
+cursor: pointer;
+}
+
+
+.form-description{
+    // border: 1px solid red;
+    width: 40%;
+    & p{
+        margin: 0.5rem 0;
+    }
+}
+
+.success-message{
+    margin-top: 5rem;
+    font-weight: 900;
+    font-size: 20px;
 }
