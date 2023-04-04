@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.back-to-top-design{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: $french_blue;
+
+    &:hover{
+        color: $celestial_blue;
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+
+}

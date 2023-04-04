@@ -1,18 +1,28 @@
 
 import './Home.scss'
 import {useNavigate} from 'react-router-dom';
-
+import BackToTop from '../Back-to-top';
+import React, {useState} from 'react';
 
 
 
 function Home() {
 
-
+ const [isVisible,setIsVisible] = useState(false);
   const navigate = useNavigate();
+  
 
+  const toggleIsVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if(scrolled > 100){
+      setIsVisible(true)
+    } else if (scrolled <= 100){
+      setIsVisible(false)
+    }
+  }
 
-
-
+  window.addEventListener('scroll', toggleIsVisible);
+ 
   return (
     <div className='home-design' id='home'>
       <div className='title-box'>
@@ -54,7 +64,9 @@ function Home() {
           <p>Ti ricordiamo che il tempo di attesa stimato per l'effettiva prenotazione e pari a 5-10 giorni lavorativi</p>
         </div>
       </div>
-
+      {
+      isVisible ? <BackToTop></BackToTop>:''
+      }
     </div>
   );
 }
