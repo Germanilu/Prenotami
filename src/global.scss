@@ -6,4 +6,16 @@ $celestial_blue: #4c9ccc;
 $white: #ffffff;
 $black: #000000;
 $transparent_black: #0000008f;
+$media: 768px;
 
+@mixin font(
+    $color:$black,
+    $font_size:inherit,
+    $font_weight:inherit,
+    $text_transform:inherit
+    ){
+        color: $color;
+        font-size: $font_size;
+        font-weight: $font_weight;
+        text-transform: $text_transform;
+     }

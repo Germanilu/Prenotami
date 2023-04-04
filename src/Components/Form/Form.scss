@@ -1,9 +1,7 @@
 @import '../../global.scss';
 
-@import '../../global.scss';
-
 .form-design{
-    height: 85.5vh;
+    height: 85.7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +42,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     // border: 1px solid red;
    
 }
