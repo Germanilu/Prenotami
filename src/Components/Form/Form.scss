@@ -58,7 +58,6 @@ cursor: pointer;
 
 
 .form-description{
-    // border: 1px solid red;
     width: 40%;
     & p{
         margin: 0.5rem 0;
@@ -69,4 +68,32 @@ cursor: pointer;
     margin-top: 5rem;
     font-weight: 900;
     font-size: 20px;
+}
+
+
+@media (max-width:$media){
+
+    .form-design{    
+        & h1{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        & span{
+            color: red;
+        }
+    }
+
+    .form{
+        grid-template-columns: 1fr ;   
+        width: 60%; 
+    }
+
+    .submit-form-button{ 
+         width: 30%;
+    }
+
+
+    .form-description{
+    width: 60%;
+    }
 }
