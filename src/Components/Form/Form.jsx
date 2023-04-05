@@ -44,7 +44,7 @@ function ContactForm() {
             </div>
             <div className="field">
               <label htmlFor="Telegram">
-                Telegram (Se vuoi essere contattato tramite app)
+                Whatsapp <span className="field-description">(Se vuoi essere contattato tramite app)</span> 
               </label>
               <input id="Telegram" type="text" name="Telegram" />
               <ValidationError
