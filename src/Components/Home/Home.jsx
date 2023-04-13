@@ -3,6 +3,7 @@ import './Home.scss'
 import {useNavigate} from 'react-router-dom';
 import BackToTop from '../Back-to-top';
 import React, {useState} from 'react';
+import ReviewForm from '../Review/index';
 
 
 
@@ -38,6 +39,8 @@ function Home() {
         <p>Status:</p>
         <span>ATTIVO</span>
       </div>
+
+      {/* <div><ReviewForm/></div> */}
 
       <div  className='information-box'>
         <h3 id='howWork' >Come funziona?</h3>

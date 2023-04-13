@@ -8,14 +8,21 @@ const ChooseService = () => {
 
     return(
         <div className="choose-service-design">
-            <h1>Scegli un servizio</h1>
+            <h1>Scegli il tipo di servizio</h1>
+            <p>Noi ci occuperemo di prenotare l'appuntamento presso il consolato</p>
             <div className="service-button-container">
 
-            <div className='reserve-button' onClick={() => navigate('/reserve')}>Passaporto</div>
-            <div className='reserve-button' onClick={() => navigate('/reserve')}>CIE</div>
+            
+    
+            <div className='reserve-button' onClick={() => navigate('/reserve-passport')}> Passaporto</div>
+            
+         
+            <div className='reserve-button' onClick={() => navigate('/reserve-cie')}> Carta d'Identità</div>
+                </div>
             </div>
+        
 
-        </div>
+   
     )
 }
 

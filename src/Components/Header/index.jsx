@@ -14,7 +14,7 @@ return(
             <img src={logo} alt="Logo" className='logo'  onClick={() => navigate('/')}/>
             <p onClick={() => navigate('/')}>Inizio</p>
             <a href='#howWork'>Come funziona</a>
-            <p onClick={() => navigate('/reserve')}>Richiedi il servizio</p>
+            <p onClick={() => navigate('/choose-service')}>Richiedi il servizio</p>
             <a href='#price'>Prezzo</a>
         </div>
     </div>

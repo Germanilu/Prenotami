@@ -1,8 +1,8 @@
 import React                            from "react";
 import { useForm, ValidationError }     from "@formspree/react";
-import "./Form.scss";
+import "./index.scss";
 
-function ContactForm() {
+function CieForm() {
   const [state, handleSubmit] = useForm("mjvdajlw");
 
   return (
@@ -10,6 +10,9 @@ function ContactForm() {
       {!state.succeeded ? (
         <div className="form-design">
           <h1>Completa il formulario richiesto</h1>
+          <p>Compila i dati richiesti con il tuo nome, l'email e la password del tuo account prenot@mi </p>
+          <p>e un numero di telefono se desideri ricevere le notifiche tramite whatsapp</p>
+          <h3>Richiesta Carta d'identità </h3>
           <form onSubmit={handleSubmit} className="form">
             <div className="field">
               <label htmlFor="name">Nome</label>
@@ -42,14 +45,26 @@ function ContactForm() {
                 errors={state.errors}
               />
             </div>
+
             <div className="field">
-              <label htmlFor="Telegram">
+              <label htmlFor="cf">
+                Codice Fiscale <span className="field-description">(Obbligatorio per la richiesta su Prenot@mi)</span>  <span>*</span>
+              </label>
+              <input id="cf" type="text" name="cf" />
+              <ValidationError
+                prefix="cf"
+                field="cf"
+                errors={state.errors}
+              />
+            </div>
+            <div className="field">
+              <label htmlFor="whatsapp">
                 Whatsapp <span className="field-description">(Se vuoi essere contattato tramite app)</span> 
               </label>
-              <input id="Telegram" type="text" name="Telegram" />
+              <input id="whatsapp" type="text" name="whatsapp" />
               <ValidationError
-                prefix="Telegram"
-                field="Telegram"
+                prefix="whatsapp"
+                field="whatsapp"
                 errors={state.errors}
               />
             </div>
@@ -57,7 +72,7 @@ function ContactForm() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="submit-form-button"
+              className="submit-form-button cie"
             >
               Invia
             </button>
@@ -86,7 +101,6 @@ function ContactForm() {
     </>
   );
 }
-function App() {
-  return <ContactForm />;
-}
-export default App;
+
+export default CieForm
+
