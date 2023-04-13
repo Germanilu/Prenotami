@@ -29,7 +29,7 @@ function Home() {
         <h2 className='box-title'>Prenota un'appuntamento </h2>
         <h2 className='box-title-second-row'>Presso il tuo consolato</h2>
         <div className='action-box'>
-          <div className='reserve-button'  onClick={() => navigate('/reserve')}>Richiedi il servizio</div>
+          <div className='reserve-button'  onClick={() => navigate('/choose-service')}>Richiedi il servizio</div>
           <a className='information-button' href='#howork'>Come funziona</a>
         </div>
       </div>
@@ -60,7 +60,7 @@ function Home() {
 
         <div className='request-box'>
           <h2>Richiedi il servizio</h2>
-          <div className='reserve-button' onClick={() => navigate('/reserve')}>Richiedi il servizio</div>
+          <div className='reserve-button' onClick={() => navigate('/choose-service')}>Richiedi il servizio</div>
           <p>Ti ricordiamo che il tempo di attesa stimato per l'effettiva prenotazione e pari a 5-10 giorni lavorativi</p>
         </div>
       </div>

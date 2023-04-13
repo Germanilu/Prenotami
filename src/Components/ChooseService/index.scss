@@ -1,0 +1,26 @@
+.choose-service-design{
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .service-button-container{
+        width: 50%;
+        min-height: 500px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    
+        & button{
+            width: 20%;
+            height: 25px;
+            
+
+        }
+    }
+}
