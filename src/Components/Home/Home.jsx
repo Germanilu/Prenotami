@@ -3,7 +3,7 @@ import './Home.scss'
 import {useNavigate} from 'react-router-dom';
 import BackToTop from '../Back-to-top';
 import React, {useState} from 'react';
-import ReviewForm from '../Review/index';
+// import ReviewForm from '../Review/index';
 
 
 
