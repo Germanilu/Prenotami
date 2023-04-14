@@ -146,6 +146,7 @@
 		// justify-content: center;
 		gap: 2rem;
 		padding: 0 2rem;
+		padding-bottom: 2rem;
 
 		& h2{
 			margin-top: 1rem;
@@ -207,6 +208,9 @@
 			& h2{
 				font-size: 1.5rem;
 				text-align: center;
+			}
+			& p{
+				font-size: .9rem;
 			}
 		}
 	}

@@ -12,7 +12,7 @@
         margin-bottom: 1rem;
     }
     & p{
-        @include font($black, .8rem, 400)
+        @include font($black, .8rem, 400);
     }
 
     & h3{
@@ -84,6 +84,10 @@ cursor: pointer;
     .form-design{    
         & h1{
             font-size: 1.5rem;
+            text-align: center;
+        }
+        & p{
+            
             text-align: center;
         }
         & span{

@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .choose-service-design{
     height: 86vh;
     display: flex;
@@ -9,7 +11,6 @@
         margin-top: 1rem;
     }
 
-
     .service-button-container{
         width: 50%;
         min-height: 200px;
@@ -20,16 +21,30 @@
         justify-content: center;
         gap: 2rem;
 
-        
-    
         & .reserve-button{
             width:  180px;
             height: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
-            
-
         }
     }
+}
+
+
+@media (max-width:$media) {
+    .choose-service-design{
+        & h1{
+            font-size: 1.2rem;
+        }
+        & p{
+            margin-top: 1rem;
+            font-size: .9rem;
+            text-align: center;
+        }
+        .service-button-container{
+            flex-direction: column;
+        }
+    }
+
 }
