@@ -3,8 +3,27 @@
     height: 8vh;
     background-color: $french_blue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
     color: $white;
+
+    & div{
+        text-align: left;
+    }
+}
+
+
+
+
+@media (max-width:$media){
+
+    .footer-design{
+        gap: 2rem;
+        & div{
+            text-align: left;
+            font-size: .7rem;
+        }
+    }
 }
