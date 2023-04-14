@@ -1,7 +1,6 @@
 @import '../../global.scss';
 
 .header-design{
-    // border: 1px solid red;
     height: 6vh;
     background-color: $french_blue;
 }
@@ -9,7 +8,6 @@
 .header{
     width: 50%;
     height: 100%;
-    // border: 1px solid green;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,7 +24,20 @@
 }
 
 .logo{
-    // border: 1px solid blue;
     cursor: pointer;
     width: 12rem;
+}
+
+
+@media (max-width:$media){   
+    .header{
+        width: 100%;
+        & p, a{
+            font-size: .9rem;
+        }
+    }
+
+    .logo{
+        display: none;
+    }
 }
