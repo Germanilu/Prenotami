@@ -1,43 +1,117 @@
 @import '../../global.scss';
 
-.header-design{
-    height: 6vh;
-    background-color: $french_blue;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+        
 }
 
-.header{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    & p, a{
-        font-weight: 500;
-        color: $black;
+.header-design{
+    width: 100%;   
+}
+
+nav{
+    width: 100%;
+    height: 5em;
+    background-color: $peacock_blue;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.burger-menu{
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.burger-bar{
+    width: 4em;
+    height: .5em;
+    background-color: rgb(0, 183, 255);
+    border-radius: .5em;
+}
+
+.menu {
+    width: 40%;
+    height: 100%;
+    background-color: $celestial_blue_transparent;
+    position: absolute;
+    top: 0; 
+   
+}
+
+.hidden {
+    display: none;
+}
+
+.visible{
+    display: inherit;
+}
+
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1.0em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.unclicked{
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s ;
+}
+
+.menu-container{
+    margin-left: 2rem;
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 4rem;
+    // border: 1px solid red;
+    font-size: 20px;
+    text-decoration: none;
+    
+     & p,a{
+        width: 90%;
+        z-index: 1;
         cursor: pointer;
         text-decoration: none;
+        color: $black;
+        font-size: 30px;
+        font-weight: 500;
+        // border: 1px solid black;
+
         &:hover{
-            color: $celestial_blue;
+            font-weight: 900;
         }
     }
 }
 
-.logo{
-    cursor: pointer;
-    width: 12rem;
+
+@media (max-width:$media){
+    
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: #4c9bccec;
+    position: absolute;
+    top: 0; 
 }
-
-
-@media (max-width:$media){   
-    .header{
-        width: 100%;
-        & p, a{
-            font-size: .9rem;
-        }
-    }
-
-    .logo{
-        display: none;
-    }
 }
