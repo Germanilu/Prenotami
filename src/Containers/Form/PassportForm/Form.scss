@@ -37,6 +37,10 @@
         border-bottom: 1px solid $black;
     }
 
+     input:focus{
+        outline: none;
+    }
+
     & label{
         font-size: 14px;
         font-weight: 500;
