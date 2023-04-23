@@ -3,8 +3,7 @@ import './Home.scss'
 import {useNavigate} from 'react-router-dom';
 import BackToTop from '../Back-to-top';
 import React, {useState} from 'react';
-import Review from '../../Components/Review/'
-// import ReviewForm from '../Review/index';
+import ReviewForm from '../../Components/Review/index';
 
 
 
@@ -41,7 +40,6 @@ function Home() {
         <span>ATTIVO</span>
       </div>
 
-      {/* <div><ReviewForm/></div> */}
 
       <div  className='information-box'>
         <h3 id='howWork' >Come funziona?</h3>
@@ -54,9 +52,9 @@ function Home() {
           <p>Con questo servizio ci auguriamo di poterti aiutare con la ricerca degli appuntamenti e liberare il tuo prezioso tempo per evitare di ripetere sempre la stessa azione e ottenere sempre la risposta "non ci sono appuntamenti disponibili in questo momento"</p>  
           </div>
       </div>
-
-      {/* <div className="review-box">
-        <Review />
+{/* 
+      <div className="review-box">
+        <ReviewForm />
       </div> */}
 
 
